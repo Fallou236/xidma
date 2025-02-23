@@ -56,13 +56,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Suivez-nous</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61560244404723" className="hover:text-green-400 transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <a href="https://t.me/xidmatul" className="hover:text-green-400 transition-colors">
                 <FaTelegram className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-green-400 transition-colors">
+              <a href="https://www.tiktok.com/@xidmatulxadiim" className="hover:text-green-400 transition-colors">
                 <SiTiktok className="w-6 h-6" />
               </a>
             </div>
