@@ -22,9 +22,10 @@ const About = () => {
     }
   ];  
 
-  const fullHistory = `Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL. Une entité, organisation a but non lucratif crée en 202?, ayant comme objectif: travailler au service du CHEIKH.
+  const fullHistory = `Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL. Il fût créé le 15 septembre 2022. À ce moment, il s'appelait Entreprise Cheikhoul Khadim. Le changement  de nom est survenu lors de notre première visite (Ziaar) auprès du Khalif général des Mourides Cheikh Mouhammadoul Mountakha Mbacké.
 
-Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL.`;
+Il a rebaptisé ainsi le Daara, avec ses prières et ses encouragements à notre endroit afin que nous continuions nos objectifs de départ qui consistent à rester sur la voie droite de l'islam, en étant au service de Cheikhoul Khadim de la plus belle des manières.
+`;
 
   const shortHistory = fullHistory.split('\n\n')[0];
 
@@ -36,7 +37,7 @@ Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particul
             À Propos de Nous
           </h2>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-          Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL. Une entité, organisation a but non lucratif crée en 202?, ayant comme objectif: travailler au service du CHEIKH.
+          Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL. Une entité, organisation a but non lucratif crée en 2022, ayant comme objectif: travailler au service du CHEIKH.
           </p>
         </div>
 

@@ -79,7 +79,7 @@ Impacts prevu :
             Nos Projets
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-          Le Daara Xidmatou Xadiim, fidèle à sa mission de promouvoir le développement communautaire et l’autosuffisance, s’est engagé dans trois projets ambitieux et innovants. Ces initiatives visent à renforcer les capacités locales, à valoriser les ressources traditionnelles et à intégrer les enseignements du Mouridisme dans divers domaines. Les projets en question sont les suivants:
+          Le Daara Xidmatul Xaddim, fidèle à sa mission de promouvoir le développement communautaire et l’autosuffisance, s’est engagé dans trois projets ambitieux et innovants. Ces initiatives visent à renforcer les capacités locales, à valoriser les ressources traditionnelles et à intégrer les enseignements du Mouridisme dans divers domaines. Les projets en question sont les suivants:
           </p>
         </div>
 
