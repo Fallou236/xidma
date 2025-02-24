@@ -24,11 +24,7 @@ const About = () => {
 
   const fullHistory = `Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL. Une entité, organisation a but non lucratif crée en 202?, ayant comme objectif: travailler au service du CHEIKH.
 
-Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL.
-
-En 2015, nous avons lancé notre premier programme d'aide alimentaire, qui est devenu depuis l'une de nos initiatives phares. En 2018, nous avons étendu nos activités pour inclure des programmes éducatifs et de développement personnel.
-
-Aujourd'hui, nous continuons à grandir et à nous adapter aux besoins de notre communauté, tout en restant fidèles à nos valeurs fondamentales de service et d'entraide. Notre réseau compte maintenant plus de 500 bénévoles actifs et nous touchons plus de 2000 personnes chaque mois à travers nos différents programmes.`;
+Dahira Xidmatul Xàddim est une organisation apolitique , musulmane, en particulier mouride qui investit sa force, sa richesse, son intelligence au service de CHEIKH AHMADOU BAMBA KHADIM RASSOUL.`;
 
   const shortHistory = fullHistory.split('\n\n')[0];
 

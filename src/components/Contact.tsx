@@ -165,8 +165,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Adresse</h4>
                   <p className="text-gray-600">
-                    Tuuba<br />
-                    Daaru minam
+                    ----
                   </p>
                 </div>
               </div>
