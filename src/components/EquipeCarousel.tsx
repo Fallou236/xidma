@@ -16,7 +16,11 @@ const equipeMembers = [
     name: 'Serigne Alif MBOW',
     role: 'Jeuwrign Kurel 1 xidmatul xaddim',
   },
-  // Ajoute plus de membres ici
+  {
+    photo: 'rassoul.png',
+    name: 'Seynina Rassoul Marahib',
+    role: 'Chargé de la communication',
+  },
 ];
 
 const EquipeCarousel = () => {

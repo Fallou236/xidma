@@ -39,8 +39,8 @@ const Gallery = () => {
     },
     {
       url: "/c11.jpg",
-      title: "Ziar General 2023",
-      category: "ziar-2023"
+      title: "Ziar General 2024",
+      category: "ziar-2024"
     },
     {
       url: "/c12.jpg",
@@ -69,10 +69,74 @@ const Gallery = () => {
     },
     {
       url: "/c10.jpg",
+      title: "Ziar General 2024",
+      category: "ziar-2024"
+    },
+    {
+      url: "/01.jpg",
       title: "Ziar General 2023",
       category: "ziar-2023"
     },
-    
+    {
+      url: "/02.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/03.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/04.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/05.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/06.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/07.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/08.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/09.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/10.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/11.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/12.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    },
+    {
+      url: "/13.jpg",
+      title: "Ziar General 2023",
+      category: "ziar-2023"
+    }
 
   ];
 
