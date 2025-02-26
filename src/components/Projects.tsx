@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, MapPin, X, ChevronRight } from 'lucide-react';
 
 const Projects = () => {
@@ -78,31 +79,32 @@ Impacts prevu :
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Nos Projets
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
-          Le Daara Xidmatul Xaddim, fidèle à sa mission de promouvoir le développement communautaire et l’autosuffisance, s’est engagé dans trois projets ambitieux et innovants. Ces initiatives visent à renforcer les capacités locales, à valoriser les ressources traditionnelles et à intégrer les enseignements du Mouridisme dans divers domaines. Les projets en question sont les suivants:
-          </p>
         </div>
 
         <div className="mt-12 space-y-12">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
               className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-gray-50 rounded-2xl overflow-hidden"
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="relative h-64 lg:h-full min-h-[300px]">
+              <motion.div 
+                className="relative h-64 lg:h-full min-h-[300px]"
+                whileHover={{ scale: 1.05 }}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-              </div>
+              </motion.div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-6">
-                  {project.description}
-                </p>
+                <p className="text-gray-600 mb-6">{project.description}</p>
                 <div className="space-y-3">
                   <div className="flex items-center text-gray-600">
                     <Calendar className="w-5 h-5 mr-2" />
@@ -125,37 +127,49 @@ Impacts prevu :
                   <ChevronRight className="ml-2 w-5 h-5" />
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        {selectedProject && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="relative">
-                <button
-                  onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {selectedProject.title}
-                </h3>
-                <div className="prose prose-indigo max-w-none">
-                  <p className="whitespace-pre-line">{selectedProject.fullDescription}</p>
-                  <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-900">Budget</h4>
-                      <p className="text-gray-600">{selectedProject.budget}</p>
-                    </div>
+        {/* MODAL ANIMÉ */}
+        <AnimatePresence>
+          {selectedProject && (
+            <motion.div 
+              className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div
+                className="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="relative">
+                  <button
+                    onClick={() => setSelectedProject(null)}
+                    className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-48 object-cover rounded-t-lg"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {selectedProject.title}
+                  </h3>
+                  <p className="whitespace-pre-line text-gray-600">
+                    {selectedProject.fullDescription}
+                  </p>
+                  <div className="mt-6 bg-gray-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-gray-900">Budget</h4>
+                    <p className="text-gray-600">{selectedProject.budget}</p>
                   </div>
                   <div className="mt-6">
                     <h4 className="font-semibold text-gray-900">Partenaires</h4>
@@ -166,10 +180,10 @@ Impacts prevu :
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        )}
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );

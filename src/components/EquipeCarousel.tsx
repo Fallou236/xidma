@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const equipeMembers = [
   {
@@ -43,25 +44,36 @@ const EquipeCarousel = () => {
         <button
           className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full cursor-pointer"
           onClick={prevSlide}
+          aria-label="Précédent"
         >
           &#10094;
         </button>
 
         <div className="flex justify-center items-center w-4/5 overflow-hidden">
-          <div className="text-center">
-            <img
-              className="w-48 h-48 rounded-full object-cover mx-auto"
-              src={equipeMembers[currentIndex].photo}
-              alt={equipeMembers[currentIndex].name}
-            />
-            <p className="mt-4 text-xl font-medium">{equipeMembers[currentIndex].name}</p>
-            <p className="text-lg text-gray-500">{equipeMembers[currentIndex].role}</p>
-          </div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+              className="text-center"
+            >
+              <img
+                className="w-48 h-48 rounded-full object-cover mx-auto"
+                src={equipeMembers[currentIndex].photo}
+                alt={equipeMembers[currentIndex].name}
+              />
+              <p className="mt-4 text-xl font-medium">{equipeMembers[currentIndex].name}</p>
+              <p className="text-lg text-gray-500">{equipeMembers[currentIndex].role}</p>
+            </motion.div>
+          </AnimatePresence>
         </div>
 
         <button
           className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full cursor-pointer"
           onClick={nextSlide}
+          aria-label="Suivant"
         >
           &#10095;
         </button>

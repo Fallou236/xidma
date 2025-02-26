@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar';
+import Navbar2 from '../Navbar2';
 import Footer from '../Footer';
 import { Users, Target, BookOpen, Heart, MessageSquare, Lightbulb, Palette, Computer, Briefcase } from 'lucide-react';
 
@@ -62,7 +62,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      <Navbar2 />
       <main>
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,7 +80,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="c3.jpg"
                   alt="Mosquée de Touba"
                   className="rounded-lg shadow-lg w-full h-[400px] object-cover"
                 />
@@ -147,7 +147,6 @@ const AboutPage = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };
